@@ -1,0 +1,19 @@
+// Function to check if a word is a palindrome
+function isPalindrome(word) {
+  // Convert the word to lowercase and remove spaces
+  const cleanedWord = word.toLowerCase().replace(/\s/g, '');
+
+  // Reverse the word
+  const reversedWord = cleanedWord.split('').reverse().join('');
+
+  // Compare the original word with the reversed version
+  return cleanedWord === reversedWord;
+}
+
+// Example usage
+const word1 = 'level';
+const word2 = 'hello';
+
+// Output the results to the console
+console.log(`${word1} is a palindrome: ${isPalindrome(word1)}`);
+console.log(`${word2} is a palindrome: ${isPalindrome(word2)}`);
